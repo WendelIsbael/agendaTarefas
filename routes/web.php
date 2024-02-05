@@ -23,5 +23,8 @@ Route::get('/cadastrar', function(){
  */
 
  Route::get('/login',[\App\Http\Controllers\loginUsuario::class,'index']); 
- route::get('/cadastrar',[\App\Http\Controllers\cadastrarUsuario::class, 'cadastrar']);
+ Route::get('/cadastrar',[\App\Http\Controllers\cadastrarUsuario::class, 'cadastrar']);
+ Route::get('/home',[\App\Http\Controllers\criarTarefas::class, 'home']);
+
+
  Route::post('/cadastrar/salvar', [\App\Http\Controllers\cadastrarUsuario::class, 'store']);

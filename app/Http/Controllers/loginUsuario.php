@@ -9,9 +9,10 @@ class loginUsuario extends Controller
 {
 
     public function index(){
-        $dados = cadastrarUsuarioModel::all();
+        $dados = loginUsuarioModel::all();
 
-        return view('paginas.login')->With('dados',$dados);
+        return view('paginas.login')->With('dados',$dados);         //funçaõ que redireciona ateb a pagina
+
     } //Fim do metodo index
 
     public function login(Request $request){
