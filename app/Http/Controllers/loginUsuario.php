@@ -9,9 +9,8 @@ class loginUsuario extends Controller
 {
 
     public function index(){
-        $dados = loginUsuarioModel::all();
 
-        return view('paginas.login')->With('dados',$dados);         //funçaõ que redireciona ateb a pagina
+        return view('paginas.login');         //funçaõ que redireciona ate a pagina
 
     } //Fim do metodo index
 

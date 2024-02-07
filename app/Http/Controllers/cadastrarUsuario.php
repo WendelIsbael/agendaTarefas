@@ -26,7 +26,7 @@ class cadastrarUsuario extends Controller
         $model-> senha = $senhaUsuario;
         $model->save();//armazenar os dados no DB
 
-        return redirect('/login');
+        return redirect('/');
     }//fim do metodo store
 }//Fim da classe
 

@@ -32,7 +32,7 @@
                 </div>
                 <div class="col">
                     <div class="container-sm rounded-4 p-3 text-center shadow-lg " style="background-color: #7735A9;" >
-                        <form action="" method="POST">
+                        <form action="/home" method="POST">
                             @csrf <!-- Valida o formulario -->
                         <br>
                         <h1 class="float-end mb-5 me-5" >Login</h1>
@@ -40,7 +40,7 @@
                 
                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
                 
-                        <button type="submit" class="btn btn-primary m-3 shadow" style="width: 200px ;background-color: #E95AC2; border: none">Enviar</button><br>
+                        <button type="submit" class="btn btn-primary m-3 shadow" style="width: 200px ;background-color: #E95AC2; border: none">Enviar</button></a><br>
                         <a href="/cadastrar" class="fw-semibold" style="color: #fefefe">Cadastre-se</a>
                         </form>
                     </div>

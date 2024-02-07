@@ -22,9 +22,11 @@ Route::get('/cadastrar', function(){
 });
  */
 
- Route::get('/login',[\App\Http\Controllers\loginUsuario::class,'index']); 
- Route::get('/cadastrar',[\App\Http\Controllers\cadastrarUsuario::class, 'cadastrar']);
- Route::get('/home',[\App\Http\Controllers\criarTarefas::class, 'home']);
+ Route::get('/',[\App\Http\Controllers\loginUsuario::class,'index']); 
+ Route::get('/cadastrar', [\App\Http\Controllers\cadastrarUsuario::class, 'cadastrar']);
+ Route::get('/consultar', [\App\Http\Controllers\criarTarefas::class, 'consultar']);
 
 
+ Route::post('/home',[\App\Http\Controllers\criarTarefas::class, 'home']);
  Route::post('/cadastrar/salvar', [\App\Http\Controllers\cadastrarUsuario::class, 'store']);
+ Route::post('/home/criar', [App\Http\Controllers\criarTarefas::class, 'store']);

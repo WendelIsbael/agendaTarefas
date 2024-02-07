@@ -44,7 +44,7 @@
                             <input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
                     
                             <button type="submit" class="btn btn-primary m-3 shadow" style="width: 200px ;background-color: #E95AC2; border: none">Enviar</button><br>
-                            <a href="/login" class="fw-semibold" style="color: #fefefe">Login</a>
+                            <a href="/" class="fw-semibold" style="color: #fefefe">Login</a>
                         </form>
                     </div>
                 </div>

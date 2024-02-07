@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\criarTarefasModel;
 
 class criarTarefas extends Controller
 {
@@ -10,7 +11,7 @@ class criarTarefas extends Controller
         $dados = criarTarefasModel::all();
 
         return view('paginas.home')->With('dados', $dados);     //função para direcionar ate a pagina
-    }//fim da functon
+    }//fim da function
 
 
     public function store(Request $request) {
@@ -20,8 +21,16 @@ class criarTarefas extends Controller
         $model = new criarTarefasModel();                       //função para salvar os dados requisitados 
         $model-> titulo = $tituloTarefa;
         $model-> descricao = $descricaoTarefa;
-        $model-> save();// armazena os dados na tabela terefas
+        $model->save();// armazena os dados na tabela terefas
 
-        return view('/home');
-    }//fim da funcition
+        return redirect('/');
+    }//fim da function
+
+    public function consultar(){
+        $dados = criarTarefasModel::all();
+
+        return view('paginas.home', compact('dados'));   
+    }//fim da funcao
+    
+
 }// fim da classe

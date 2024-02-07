@@ -10,4 +10,4 @@ class criarTarefasModel extends Model
     use HasFactory;
 
     protected $table = 'tarefas'; //protege a tabela
-}
+}//fim da classe
