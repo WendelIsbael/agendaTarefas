@@ -28,14 +28,14 @@
     </div> -->
 
     <div class="position-absolute top-50 start-50 translate-middle" >
-        <div class="container-lg p-5 rounded-5 text-white shadow-lg"  style="background-color: #8B2B98; width: 1170px; background-image: url("/astro_login.jpeg");>  
+        <div class="container-lg p-5 rounded-5 text-white shadow-lg"  style="background-color: #3D1860; width: 1170px;">  
             <div class="row" >
                 <div class="col">
-                    <div class="container-sm rounded-4 p-3 text-center shadow-lg " style="background-color: #7735A9;" >
+                    <div class="container-sm rounded-4 p-3 text-center shadow-lg " style="background-color: #BB99CD;" >
                         <form action="/cadastrar/salvar" method="POST">
                                 @csrf <!-- Valida o formulario -->
                             <br>
-                            <h1 class="float-start mb-5 ms-3" >Cadastro</h1>
+                            <h1 class="float-start mb-5 ms-3" style="color: #643579" >Cadastro</h1>
 
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe seu nome" requered><br>
 
@@ -43,8 +43,8 @@
                     
                             <input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
                     
-                            <button type="submit" class="btn btn-primary m-3 shadow" style="width: 200px ;background-color: #E95AC2; border: none">Enviar</button><br>
-                            <a href="/" class="fw-semibold" style="color: #fefefe">Login</a>
+                            <button type="submit" class="btn btn-primary m-3 shadow" style="width: 200px ;background-color: #643579; border: none">Enviar</button><br>
+                            <a href="/" class="fw-semibold" style="color: #643579">Login</a>
                         </form>
                     </div>
                 </div>

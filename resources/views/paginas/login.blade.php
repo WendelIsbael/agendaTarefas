@@ -21,7 +21,7 @@
 
     <div class="position-absolute top-50 start-50 translate-middle" >
     
-        <div class="container-lg p-5 rounded-5 text-white shadow-lg"  style="background-color: #8B2B98 ; width: 1170px;"> 
+        <div class="container-lg p-5 rounded-5 text-white shadow-lg"  style="background-color:  #3D1860 ; width: 1170px;"> 
          
             <div class="row">
                 <div class="col-8 p-5 ps-4" >
@@ -31,17 +31,17 @@
     
                 </div>
                 <div class="col">
-                    <div class="container-sm rounded-4 p-3 text-center shadow-lg " style="background-color: #7735A9;" >
+                    <div class="container-sm rounded-4 p-3 text-center shadow-lg " style="background-color: #BB99CD;" >
                         <form action="/home" method="POST">
                             @csrf <!-- Valida o formulario -->
                         <br>
-                        <h1 class="float-end mb-5 me-5" >Login</h1>
+                        <h1 class="float-end mb-5 me-5" style="color: #643579">Login</h1>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Informe seu email" required><br>
                 
                         <input type="password" class="form-control" id="senha" name="senha" placeholder="Password" required>
                 
-                        <button type="submit" class="btn btn-primary m-3 shadow" style="width: 200px ;background-color: #E95AC2; border: none">Enviar</button></a><br>
-                        <a href="/cadastrar" class="fw-semibold" style="color: #fefefe">Cadastre-se</a>
+                        <button type="submit" class="btn btn-primary m-3 shadow fw-bold" style="width: 200px ;background-color: #643579; border: none;">Enviar</button></a><br>
+                        <a href="/cadastrar" class="fw-semibold" style="color: #643579">Cadastre-se</a>
                         </form>
                     </div>
                 </div>
